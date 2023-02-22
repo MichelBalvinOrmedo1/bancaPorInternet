@@ -34,3 +34,6 @@ che.addEventListener("change",function(){
   inputCadena.value = ""
   
 })
+function a(e){
+  e.key
+}
