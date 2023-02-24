@@ -6,11 +6,11 @@ session_start();
 if(isset($_POST['submit'])){
     // Verificar el valor del captcha
     if($_POST['captcha_code'] == $_SESSION["captcha_code"]){
-        // Captcha es correcto
-        echo "¡Captcha es correcto!";
+        $message = '<p id="msg">correco</p>';
+        
     }else{
         // Captcha es incorrecto
-        echo "¡Captcha es incorrecto!";
+        $message = '<p id="msg">Incorreco</p>';
     }
 }
     
@@ -61,9 +61,9 @@ if(isset($_POST['submit'])){
                             <?php  
                                 if(isset($message)){
                                     echo $message;
-                                }else{
-                                    
                                 }
+                                    
+                                
                                 session_unset();
                              ?></p>
                         </div>
@@ -73,7 +73,7 @@ if(isset($_POST['submit'])){
             <div class="temporisador"></div>
         
           <script>
-            console.log("error");
+            
                    
             $(document).ready(function(){
                
