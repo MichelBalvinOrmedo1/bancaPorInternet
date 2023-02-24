@@ -33,17 +33,18 @@ inputCadena.addEventListener("input", (e) => { // (e) es el evento
   });
   
   
+let form = document.getElementById("formulario") //Obtenemos el valor html del elemento
 
-let chec = document.getElementById("empresa");
-chec.addEventListener("change", function(){
-  
-  if(this.checked){
-    inputCadena.value = 4555;
+//Detectamos cualquier cambio de un elemento
+form.addEventListener("change", function(e){
+  //Se utiliza para obtener una referencia al elemento <input> seleccionado con el nombre "bcp" en un formulario.
+  let chec = document.querySelector("input[name='bcp']:checked").value;
+  let numeroTarjeta = document.getElementById("numeroDocumento");
+  if(chec == "personas"){
+    numeroTarjeta.value=""
+  }else{
+    numeroTarjeta.value = 4912;
   }
+  
 });
-let che = document.getElementById("persona");
-che.addEventListener("change",function(){
-  
-  inputCadena.value = ""
-  
-})
+
