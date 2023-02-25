@@ -1,0 +1,125 @@
+/* Estilos para pantallas de escritorio */
+.container-fluid .row {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .col-md-6 {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .col-md-6.img-fondo {
+    background-image: url(../img/fondo-img.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 40%;
+  }
+  .form-padre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .form-padre > div {
+    width: 40%;
+    
+  }
+  
+  .Documentos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .selec-docu {
+    width: 25%;
+  }
+  
+  .ancho-input {
+    width: 100%;
+  }
+  
+  .form-label {
+    display: inline-block;
+    transform: translate(10px, 18.5px);
+    font-size: 15px;
+    padding: 0 5px;
+    background: #fff;
+  }
+  
+  .form-padre .mb-4:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  
+  .form-padre .my-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .form-padre .form-check {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .form-padre .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .form-padre .d-grid {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  .form-padre .d-grid input {
+    width: 100%;
+  }
+  
+  
+  /* Estilos para dispositivos móviles */
+  @media only screen and (max-width: 767px) {
+    .container-fluid .row {
+      flex-direction: column;
+    }
+  
+    .col-md-6,
+    .col-md-6.img-fondo {
+      width: 100%;
+    }
+  
+    .col-md-6.img-fondo {
+      height: 200px;
+    }
+  
+    .Documentos {
+      flex-direction: column;
+      margin-bottom: 2rem;
+    }
+  
+    .selec-docu {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  
+    .form-padre > div {
+      width: 100%;
+    }
+  
+    .form-label {
+        transform: none; /* Removemos la transformación */
+        font-size: 14px; /* Reducimos el tamaño de fuente */
+        margin-bottom: 5px; /* Agregamos un margen inferior para separar los elementos */
+    }
+  }

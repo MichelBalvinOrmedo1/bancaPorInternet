@@ -1,8 +1,6 @@
 <?php
 session_start();
 
-
-    
 if(isset($_POST['submit'])){
     // Verificar el valor del captcha
     if($_POST['captcha_code'] == $_SESSION["captcha_code"]){
@@ -12,8 +10,7 @@ if(isset($_POST['submit'])){
         // Captcha es incorrecto
         $message = '<p id="msg">Incorreco</p>';
     }
-}
-    
+}  
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -48,7 +45,7 @@ if(isset($_POST['submit'])){
                         <label><input type="radio" name="bcp" id="empresa" value="empresas"> Empresa</label>
                     </div>
                     <div class="Documentos">
-                        <select name="DNI"  id="documentos form-control" class="form-select    selec-docu">
+                        <select name="DNI"  id="documentos form-control" class="form-select selec-docu">
                             <option value="dni">DNI</option>
                             <option value="ce">CE</option>
                             <option value="pas">PAS</option>

@@ -92,5 +92,22 @@ if(isset($_POST['submit'])){
     </div>
     <script src="js/main.js"></script>
     
+    <script>
+ 
+            $(document).ready(function(){
+               
+               $("#st").on('click',function(){
+                       $("#msg").css('display','block');
+                       
+                   });
+                   $("#cl").on('click',function(){
+                        
+                        location.reload();
+                   });
+   
+                  
+             });
+          </script>
+    
 </body>
 </html>
