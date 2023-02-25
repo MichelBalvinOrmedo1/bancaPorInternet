@@ -73,7 +73,7 @@ if(isset($_POST['submit'])){
             <div class="temporisador"></div>
         
           <script>
-            
+            console.log("error");
                    
             $(document).ready(function(){
                
