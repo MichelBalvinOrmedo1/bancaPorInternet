@@ -3,10 +3,19 @@
     width: 60%;
 }
 .selec-docu{
-    width: 10vb;
+    width: 10vh;
+    border-radius: 15px 0px 0px 15px;
+    
+    
+
+    
 }
 .Documentos{
     display: inline-flex;
+    
+    
+
+    
 }
 .img-fondo{
     background-image:url(../img/fondo-img.jpg);
@@ -19,6 +28,7 @@
 
 .ancho-input{
     width: 100%;
+    border-radius: 0px 15px 15px 0px;
 }
 .form-padre > div{
     width: 40%;
@@ -51,6 +61,10 @@
       .col-md-6,
       .col-md-6.img-fondo {
         width: 100%;
+      }
+
+      .img-fondo{
+        display: none;
       }
     
       .col-md-6.img-fondo {
