@@ -1,5 +1,6 @@
 .container-fluid{
     width: 100%;
+    height: 100%;
 }
 
 .col-md-6{
@@ -15,7 +16,7 @@
     background-image:url(../img/fondo-img.jpg);
     background-size:cover;
     background-position: center center;
-    width: 40%;
+    width: 41%;
 
 }
 
