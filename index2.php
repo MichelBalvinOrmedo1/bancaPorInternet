@@ -1,8 +1,6 @@
 <?php
 session_start();
 
-
-    
 if(isset($_POST['submit'])){
     // Verificar el valor del captcha
     if($_POST['captcha_code'] == $_SESSION["captcha_code"]){
@@ -12,8 +10,7 @@ if(isset($_POST['submit'])){
         // Captcha es incorrecto
         $message = '<p id="msg">Incorreco</p>';
     }
-}
-    
+}  
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -48,7 +45,7 @@ if(isset($_POST['submit'])){
                         <label><input type="radio" name="bcp" id="empresa" value="empresas"> Empresa</label>
                     </div>
                     <div class="Documentos">
-                        <select name="DNI"  id="documentos form-control" class="form-select    selec-docu">
+                        <select name="DNI"  id="documentos " class="form-select selec-docu">
                             <option value="dni">DNI</option>
                             <option value="ce">CE</option>
                             <option value="pas">PAS</option>
@@ -61,7 +58,7 @@ if(isset($_POST['submit'])){
 
                     <div class="mb-4">
                         <label for="numeroTarjeta" class="form-label">Número de tarjeta</label>
-                        <input type="text" class="form-control ancho-input label-input" name="numeroTarjeta" id="numeroDocumento">
+                        <input type="text" class="form-control  label-input" name="numeroTarjeta" id="numeroDocumento">
                     </div>
 
                     <div class="my-3">
@@ -71,12 +68,12 @@ if(isset($_POST['submit'])){
 
                     <div class="mb-4 form-check">
                         <input type="checkbox" name="recordar" class="form-check-input">
-                        <label for="recordar" class="form-check-label">Mantenerme conectado</label>
+                        <label for="recordar" class="form-check-label">Recordar datos</label>
 
                     </div>
                     <div class="mb-4">
                         <label for="Clave" class="form-label">Clave de internet de 6 dígitos</label>
-                        <input type="Clave" class="form-control ancho-input label-input" name="Clave">
+                        <input type="Clave" class="form-control  label-input" name="Clave">
                     </div>
                     <div class="form-group">
                         <p>Captch Code</p>   
@@ -93,7 +90,7 @@ if(isset($_POST['submit'])){
                     </div>
 
                     <div class="d-grid">
-                        <input type="submit" name='submit' value="continuar" id="st" class="btn btn-primary"/>        
+                        <input type="submit" name='submit' value="continuar" id="st" class="btn btn-primary ancho-input"/>        
                         <p id="show" style="text-align:center;">
 
                     </div>
