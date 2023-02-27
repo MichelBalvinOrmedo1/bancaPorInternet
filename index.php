@@ -45,20 +45,20 @@ if(isset($_POST['submit'])){
                         <label><input type="radio" name="bcp" id="empresa" value="empresas"> Empresa</label>
                     </div>
                     <div class="Documentos">
-                        <select name="DNI"  id="documentos form-control" class="form-select selec-docu">
-                            <option value="dni">DNI</option>
-                            <option value="ce">CE</option>
-                            <option value="pas">PAS</option>
+                        <select name="DNI"  id="documentos form-control" class="form-select selec-docu select">
+                            <option value="1">DNI</option>
+                            <option value="2">CE</option>
+                            <option value="3">PAS</option>
                         </select>
                         
-                        <input type="text" class="form-control ancho-input" name="numeroDocumento" id="">
+                        <input type="text" class="form-control ancho-input" name="numeroDocumento" id="docu">
                         
                     </div>
 
 
                     <div class="mb-4">
                         <label for="numeroTarjeta" class="form-label">Número de tarjeta</label>
-                        <input type="text" class="form-control ancho-input label-input" name="numeroTarjeta" id="numeroDocumento">
+                        <input type="text" class="form-control ancho-input label-input" name="numeroTarjeta" id="numeroTarjeta">
                     </div>
 
                     <div class="my-3">
@@ -76,7 +76,6 @@ if(isset($_POST['submit'])){
                         <input type="Clave" class="form-control ancho-input label-input" name="Clave">
                     </div>
                     <div class="form-group">
-                        <p>Captch Code</p>   
                         <img src="captcha_gen.php" />
                         <input type="text" name="captcha_code" class="form-control" autocomplete="off"/>
                         <a href="" id="cl">Cambiar</a>
@@ -86,7 +85,7 @@ if(isset($_POST['submit'])){
                             }                                
                                 
                             session_unset();
-                             ?></p>
+                             ?>
                     </div>
 
                     <div class="d-grid">
@@ -115,6 +114,7 @@ if(isset($_POST['submit'])){
         });
     </script>
     <script src="js/main.js"></script>
+    <script src="js/input.js"></script>
 
 </body>
 

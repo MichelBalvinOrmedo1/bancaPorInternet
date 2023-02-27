@@ -1,8 +1,3 @@
-.container-fluid{
-    width: 100%;
-    height: 100%;
-}
-
 
 .col-md-6{
     width: 60%;
@@ -18,6 +13,7 @@
     display: inline-flex;
        
 }
+
 .col-md-6.img-fondo {
     background-image: url(../img/fondo-img.jpg);
     background-size: cover;
@@ -53,6 +49,15 @@
     margin-bottom: 1rem;
     font-size: 1.8vh;
   }
+   .form-padre .d-grid {
+    width: 50%;
+    margin-top: 1rem;
+  }
+  
+  .form-padre .d-grid input {
+    width: 100%;
+  }
+  
 
 @media (max-width: 764px){
     .container-fluid .row {
