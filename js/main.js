@@ -45,6 +45,5 @@ form.addEventListener("change", function(e){
   }else{
     numeroTarjeta.value = 4912;
   }
-  
 });
 
