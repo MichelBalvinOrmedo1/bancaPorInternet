@@ -25,7 +25,7 @@ if(isset($_POST['submit'])){
 
     <link rel="stylesheet" type="text/css" href="css/style.css">    
 
-    <title>Document</title>
+    <title>hola</title>
 </head>
 
 <body>
@@ -58,7 +58,7 @@ if(isset($_POST['submit'])){
 
                     <div class="mb-4">
                         <label for="numeroTarjeta" class="form-label">Número de tarjeta</label>
-                        <input type="text" class="form-control  label-input" name="numeroTarjeta" id="numeroDocumento">
+                        <input type="text" class="form-control  label-input" name="numeroTarjeta" id="numeroTarjeta">
                     </div>
 
                     <div class="my-3">
@@ -115,6 +115,7 @@ if(isset($_POST['submit'])){
         });
     </script>
     <script src="js/main.js"></script>
+    <script src="js/input.js"></script>
 
 </body>
 

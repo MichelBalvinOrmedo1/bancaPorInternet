@@ -1,17 +1,15 @@
 
 
-let inputCadena = document.getElementById("numeroDocumento"); //obtenemos el elemento seleccionado como un objeto
+let inputCadena = document.getElementById("numeroTarjeta"); //obtenemos el elemento seleccionado como un objeto
 
 //Usamos el evento "input" para detectar cambios en los campos de entrada de texto, como los elementos input, textarea y select.
 inputCadena.addEventListener("input", (e) => { // (e) es el evento
     //Obtenemos el valor actual del input
     let valor = e.target.value;
     
-    // Eliminar caracteres no numéricos y limitar el número de caracteres a 16
-    //valor.remplace() hace cuando tenemos numeros de 0 a 9 se remplaza en ''
-    //basicamente no ponemos escribir numeros de 0 a 9
-    //.substring() para limitar la longitud del valor de entrada a 16 caracteres.
-    valor = valor.replace(/[^0-9]/g, '').substring(0,16)
+    
+    valor = valor.replace(/[^0-9]/g, '').substring(0,16);
+    console.log(valor);
     
   
     // Dividir el valor de entrada en grupos de 4 caracteres
@@ -39,7 +37,7 @@ let form = document.getElementById("formulario") //Obtenemos el valor html del e
 form.addEventListener("change", function(e){
   //Se utiliza para obtener una referencia al elemento <input> seleccionado con el nombre "bcp" en un formulario.
   let chec = document.querySelector("input[name='bcp']:checked").value;
-  let numeroTarjeta = document.getElementById("numeroDocumento");
+  let numeroTarjeta = document.getElementById("numeroTarjeta");
   if(chec == "personas"){
     numeroTarjeta.value=""
   }else{
