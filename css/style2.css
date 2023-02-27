@@ -34,7 +34,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem;
   }
   
   .selec-docu {
@@ -93,10 +92,14 @@
     .container-fluid .row {
       flex-direction: column;
     }
+
+    
+    
   
     .col-md-6,
     .col-md-6.img-fondo {
-      width: 100%;
+      
+      display: none;
     }
   
     .col-md-6.img-fondo {
@@ -122,4 +125,5 @@
         font-size: 14px; /* Reducimos el tamaño de fuente */
         margin-bottom: 5px; /* Agregamos un margen inferior para separar los elementos */
     }
+    
   }
