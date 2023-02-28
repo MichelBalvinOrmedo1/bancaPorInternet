@@ -9,7 +9,7 @@ if(isset($_POST['submit'])){
         $message = '<p id="msg">correco</p>';
         
     }else{
-        // Captcha es incorrecto
+        // Captcha es incorrectoo
         $message = '<p id="msg">Incorreco</p>';
     }
 }
