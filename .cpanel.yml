@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/pruebasenatibalv/public_html/
-    - /bin/rsync -av public/$DEPLOYPATH
+    - export DEPLOYPATH=/home5/pruebasenatibalv/public_html/
+    - /bin/cp * /$DEPLOYPATH
