@@ -57,7 +57,9 @@
   .form-padre .d-grid input {
     width: 100%;
   }
-  
+.invalid{
+  border: solid 2px red;
+}
 
 @media (max-width: 764px){
     .container-fluid .row {

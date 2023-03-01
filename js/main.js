@@ -8,7 +8,7 @@ inputCadena.addEventListener("input", (e) => { // (e) es el evento
     let valor = e.target.value;
     
     
-    valor = valor.replace(/[^0-9]/g, '').substring(0,16);
+    valor = valor.replace(/[^0-9]/g,'').substring(0,16);
     console.log(valor);
     
   
@@ -34,11 +34,11 @@ inputCadena.addEventListener("input", (e) => { // (e) es el evento
 let form = document.getElementById("formulario") //Obtenemos el valor html del elemento
 
 //Detectamos cualquier cambio de un elemento
-form.addEventListener("change", function(e){
+form.addEventListener("blur", function(e){
   //Se utiliza para obtener una referencia al elemento <input> seleccionado con el nombre "bcp" en un formulario.
   let chec = document.querySelector("input[name='bcp']:checked").value;
   let numeroTarjeta = document.getElementById("numeroTarjeta");
-  if(chec == "personas"){
+  if(chec == "personas" && numeroTarjeta.value != ""){
     numeroTarjeta.value=""
   }else{
     numeroTarjeta.value = 4912;
