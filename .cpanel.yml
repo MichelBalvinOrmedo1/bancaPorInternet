@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/pruebasenatibalv/public_html/banco/
-    - /bin/rsync -av bancaPorInternet/$DEPLOYPATH
+    - export DEPLOYPATH=/home5/pruebasenatibalv/public_html/banco/
+    - /bin/cp -av bancaPorInternet/$DEPLOYPATH
