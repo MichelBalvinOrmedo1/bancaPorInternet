@@ -95,7 +95,7 @@ if(isset($_POST['submit'])){
                     </div>
                     <p> lock
                         Esta es una página segura del BCP. Si tienes dudas sobre la autenticidad de la web, comunícate
-                        con nosotros al 311-9898 o a través de nuestros medios digitales.</p>
+                        con nosotros al 311-9898 o a través de nuestross medios digitales.</p>
                 </form>
             </div>
         </div>
