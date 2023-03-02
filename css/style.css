@@ -19,6 +19,8 @@
     background-size: cover;
     background-position: center center;
     width: 40%;
+    height: 100vh;
+
   }
 
 
@@ -57,7 +59,8 @@
   .form-padre .d-grid input {
     width: 100%;
   }
-  
+  /*Mis cambis Ale*/
+  /*fin del cambio*/
 
 @media (max-width: 764px){
     .container-fluid .row {
