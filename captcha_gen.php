@@ -30,7 +30,7 @@ for($i=0;$i<1000;$i++) {
 }  
 /* Text Size */
 /* you are the one is a font file */
-imagettftext($target_layer, $font_size, 0, 25, 35, $captcha_text_color, 'fonts/Xerox Serif Wide Italic.ttf', $captcha_code);
+imagettftext($target_layer, $font_size, 0, 25, 35, $captcha_text_color, 'fonts/You_are_the_one.ttf', $captcha_code);
 
 
 header("Content-type: image/jpeg");

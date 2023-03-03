@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if(selectedOption == 1){
         
-        valor = valor.substring(0,7);
+        valor = valor.substring(0,8);
         
         console.log(valor.length)
         
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if(valor.length===0){
                 numDocumento.classList.add("invalid");
                 numDocumento.style.borderColor="red";
-            }else if(valor.length === 7){
+            }else if(valor.length === 8){
                 numDocumento.classList.remove("invalid")
                 numDocumento.style.borderColor="";
             }else{
@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }else if(selectedOption == 3){
             if(valor.length===0){
                 numDocumento.style.borderColor="red";
-            }else if(valor.length === 7){
+            }else if(valor.length === 10){
                 numDocumento.style.borderColor="";
             }else{
                 numDocumento.style.borderColor="red";
