@@ -29,11 +29,11 @@
   border-radius: 0px 8px 8px 0px;
 }
 .ancho2-input{
-width: 100%;
-border-radius: 8px;
+  width: 100%;
+  border-radius: 8px;
 }
 .form-label{
-border-radius: 15px;
+  border-radius: 15px;
 }
 .form-padre > div{
   width: 40%;
@@ -80,21 +80,21 @@ border-radius: 15px;
   font-family: "Flexo-Regular";
 }
 .botoncontinuar{
-background-color: #FF7800;
-border-color: #FF7800;
-border-radius: 20px;
+  background-color: #FF7800;
+  border-color: #FF7800;
+  border-radius: 20px;
 }
 .botoncontinuar:hover{
-background-color: #ff7700c4;
-border-color: #FF7800;
+  background-color: #ff7700c4;
+  border-color: #FF7800;
 }
 .radio{
-position: relative;
-padding-left: 30px;
-vertical-align: middle;
-display: inline-block;
-cursor: pointer;
-margin-bottom: 10px;
+  position: relative;
+  padding-left: 30px;
+  vertical-align: middle;
+  display: inline-block;
+  cursor: pointer;
+  margin-bottom: 10px;
 }
 .radio + .radio{
 margin-left: 20px;
