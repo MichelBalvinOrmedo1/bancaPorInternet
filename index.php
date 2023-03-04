@@ -68,8 +68,8 @@ if (isset($_POST['submit'])) {
                     </div>
 
 
-                    <div class="mb-4 form-check">
-                        <input type="checkbox" name="recordar" class="form-check-input">
+                    <div class="mb-4 ">
+                        <input type="checkbox"  name="recordar" class="colorcheck">
                         <label for="recordar" class="form-check-label">Recordar datos</label>
 
                     </div>
