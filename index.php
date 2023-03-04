@@ -78,11 +78,11 @@ if (isset($_POST['submit'])) {
                         <input type="Clave" class="form-control ancho2-input label-input" name="Clave">
                     </div>
 
-                    <div class="my-3">
+                    <div class="button-container">
                         <a href="#" class="linea1">No tengo clave</a>
                         <a href="#" class="linea1">Olvide mi clave</a>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group mt-2">
                         <img src="captcha_gen.php" />
                         <input type="text" name="captcha_code" class="form-control" autocomplete="off" placeholder="Código"/>
                         <a href="" class="linea1" id="cl">Cambiar</a>
