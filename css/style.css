@@ -140,4 +140,5 @@
 
 input[type=radio]#Green {
   accent-color: rgb(230, 126, 34);
+  border-color: #FF7800;
 }

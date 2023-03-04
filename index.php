@@ -24,7 +24,7 @@ if (isset($_POST['submit'])) {
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <title>Document</title>
+    <title>BancaPorInternet</title>
 </head>
 
 <body>
@@ -85,7 +85,7 @@ if (isset($_POST['submit'])) {
                     <div class="form-group">
                         <img src="captcha_gen.php" />
                         <input type="text" name="captcha_code" class="form-control" autocomplete="off" placeholder="Código"/>
-                        <a href="#" class="linea1" id="cl">Cambiar</a>
+                        <a href="" class="linea1" id="cl">Cambiar</a>
                         <?php
                         if (isset($message)) {
                             echo $message;
