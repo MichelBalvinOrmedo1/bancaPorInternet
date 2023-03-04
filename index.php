@@ -41,11 +41,11 @@ if (isset($_POST['submit'])) {
                     <div class="opciones">
 
                         <label class="radio">
-                            <input type="radio" name="bcp" id="persona" value="personas"> Persona
+                            <input type="radio" name="bcp" id="Green" id="persona" value="personas"> Persona
                             <span></span>
                         </label>
                         <label class="radio">
-                            <input type="radio" name="bcp" id="empresa" value="empresas"> Empresa
+                            <input type="radio" name="bcp" id="Green" id="empresa" value="empresas"> Empresa
                             <span></span>
                         </label>
 
