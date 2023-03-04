@@ -83,10 +83,18 @@
   background-color: #FF7800;
   border-color: #FF7800;
   border-radius: 20px;
+  color:white;
+  height: 40px;
+  width: 450px;
+  
+
+
 }
 .botoncontinuar:hover{
   background-color: #ff7700c4;
   border-color: #FF7800;
+ 
+  
 }
 .radio{
   position: relative;
