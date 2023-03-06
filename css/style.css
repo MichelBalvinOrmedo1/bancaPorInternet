@@ -134,6 +134,9 @@ margin-left: 20px;
   background: #FF7800;
   transform: translate(-50%, -50%) scale(0.6);
 }
+.invalid{
+  border-color:red
+}
 
 
 /*fin del cambio*/

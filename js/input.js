@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
         
         valor = valor.substring(0,8);
         
-        console.log(valor.length)
+        
         
 
         e.target.value = valor;
@@ -43,10 +43,22 @@ document.addEventListener("DOMContentLoaded", function() {
         let valor = e.target.value;
         let nombre = e.target.name;
         inputVacio(nombre,valor)
+        
 
     })
+    numTarjeta.addEventListener("change",(e)=>{
+        console.log(e.target.value.length)
+        if(e.target.value.length != 19){
+            numTarjeta.classList.add("invalid");
+            numTarjeta.style.borderColor="red";
+        }else{
+            numTarjeta.classList.remove("invalid")
+            numTarjeta.style.borderColor="";
+        }
+    })
+
     numDocumento.addEventListener("change",(e)=>{
-        console.log(selectedOption)
+        
 
         let valor = e.target.value;
         validacion(valor)
@@ -54,30 +66,23 @@ document.addEventListener("DOMContentLoaded", function() {
     
     })
    
-    function inputVacio(nombreInput,valor){
-        if(nombreInput === "numeroDocumento"){
-            if(valor.length === 0){
-                numDocumento.classList.add("invalid");
-                console.log("hola perra")
-            }else{
-                numDocumento.classList.remove("invalid");
-            }
-        }else if(nombreInput === "numeroTarjeta"){
-            if(valor.length === 0){
-                console.log("hola perro")
-                numTarjeta.classList.add("invalid");
-            }else{
-                numTarjeta
-                .classList.remove("invalid");
-            }
+    function inputVacio(nombreInput, valor) {
+        let elemento = (nombreInput === "numDocumento") ? numDocumento : numTarjeta;
+        
+        if (valor.length === 0) {
+          
+          elemento.classList.add("invalid");
+        } else {
+          elemento.classList.remove("invalid");
         }
-    }
+      }
     
     function validacion(valor){
         if(selectedOption == 1){
             if(valor.length===0){
                 numDocumento.classList.add("invalid");
                 numDocumento.style.borderColor="red";
+                
             }else if(valor.length === 8){
                 numDocumento.classList.remove("invalid")
                 numDocumento.style.borderColor="";
@@ -85,15 +90,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 numDocumento.classList.add("invalid");
                 numDocumento.style.borderColor="red";
             }
-        }else if(selectedOption == 2){
-            if(valor.length===0){
-                numDocumento.style.borderColor="red";
-            }else if(valor.length === 10){
-                numDocumento.style.borderColor="";
-            }else{
-                numDocumento.style.borderColor="red";
-            }
-        }else if(selectedOption == 3){
+        }else if(selectedOption == 2 || selectedOption==3){
             if(valor.length===0){
                 numDocumento.style.borderColor="red";
             }else if(valor.length === 10){
@@ -102,10 +99,5 @@ document.addEventListener("DOMContentLoaded", function() {
                 numDocumento.style.borderColor="red";
             }
         }
-       
     }
-   
-
-
 });
-
