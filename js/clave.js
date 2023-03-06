@@ -31,7 +31,7 @@ input.addEventListener("click",(e)=>{
 
         let borrarCaracter = document.createElement("div");
         borrarCaracter.style="grid-column: 4 / span 1; grid-row: 3 / span 1;";
-        borrarCaracter.textContent = "borrar"
+        borrarCaracter.textContent = "deleter"
         divPadre.appendChild(borrarCaracter);
 
 
