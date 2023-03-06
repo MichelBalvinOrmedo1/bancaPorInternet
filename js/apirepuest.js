@@ -6,12 +6,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
         var dni = document.getElementById("docu").value;
         fetch(
-            "https://apiperu.dev/api/dni/" + dni + "?api_token=fb8e800e8a62e7d8a22dabd2f95c68387298969548298ba396c7a0932e6fde1e"
+            "https://apiperu.dev/api/dni/" + dni + "?api_token=bbf568c1ef8011ea7da56b6cba186e8cad4d7c8080160a8e65e7bad7eade0455"
         )
             .then((res) => res.json())
             .then((data) => {
                 if (data.success && data.data) {
                     console.log("El DNI existe");
+                    console.log(data)
                 } else {
                     console.log("El DNI no existe");
                    
