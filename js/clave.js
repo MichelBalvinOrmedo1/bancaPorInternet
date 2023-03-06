@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
     const input = document.getElementById("clave");
     let elementAdded = false;
@@ -25,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         this.remove();
                     }
                 });
-                
+
                 numbers.splice(randomIndex, 1);
                 parentDiv.appendChild(random);
             }
