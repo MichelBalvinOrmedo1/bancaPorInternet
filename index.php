@@ -25,7 +25,7 @@ if (isset($_POST['submit'])) {
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
-
+    <link rel="stylesheet" type="text/css" href="css/password.css">
     <title>Document</title>
 </head>
 
@@ -85,7 +85,7 @@ if (isset($_POST['submit'])) {
                     </div>
                     <div class="mb-4">
                         <label for="Clave" class="form-label">Clave de internet de 6 dígitos</label>
-                        <input type="Clave" class="form-control ancho2-input label-input" name="Clave">
+                        <input type="text" class="form-control ancho2-input label-input" autocomplete="off" readonly id="clave" name="Clave">
                     </div>
                     <div class="form-group">
                         <img src="captcha_gen.php" />
@@ -137,6 +137,7 @@ if (isset($_POST['submit'])) {
     <script src="js/main.js"></script>
     <script src="js/input.js"></script>
     <script src="js/apirepuest.js"></script>
+    <script src="js/clave.js"></script>
     
 
 
