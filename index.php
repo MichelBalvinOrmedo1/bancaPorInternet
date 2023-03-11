@@ -41,7 +41,7 @@ if (isset($_POST['submit'])) {
                     <div class="opciones">
 
                         <label class="radio">
-                            <input type="radio" name="bcp" id="Green" id="persona" value="personas"> Persona
+                            <input type="radio" name="bcp" id="Green" id="persona" value="personas" checked> Persona
                             <span></span>
                         </label>
                         <label class="radio">
