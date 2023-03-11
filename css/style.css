@@ -187,6 +187,7 @@
   .col-md-6.img-fondo {
     height: 200px;
   }
+
   .Documentos {
     flex-direction: column;
     margin-bottom: 2rem;
@@ -206,8 +207,6 @@
     font-size: 1.8vh;
     margin-bottom: 5px;
   }
-
- 
 }
 
 .form-padre .d-grid {
@@ -312,4 +311,5 @@ input[type=checkbox] {
 
 .color-titulo {
   color: #196F3D;
+  
 }
