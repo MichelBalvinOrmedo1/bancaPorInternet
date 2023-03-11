@@ -1,5 +1,5 @@
-#### ------------
+---
 deployment:
   tasks:
     - export DEPLOYPATH=/home5/pruebasenatibalv/public_html
-    - /bin/rsync -av bancaPorInternet/ $DEPLOYPATH
+    - /bin/rsync -av --exclude=".cpanel.yml" ./ $DEPLOYPATH/
