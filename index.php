@@ -40,7 +40,7 @@ if (isset($_POST['submit'])) {
 
             <h3 class="fw-bold text-center pt-5 mb-5 color-titulo">Banca por Internet</h3>
 
-<<<<<<< HEAD
+
                 <h3 class="fw-bold text-center pt-5 mb-5 color-titulo">Banca por Internet</h3>
                 <!-- Formulario -->
                 <form action="#" method="post" novalidate class="form-padre" id="formulario">
@@ -66,11 +66,7 @@ if (isset($_POST['submit'])) {
                         <input type="text" class="form-control ancho-input" name="numeroDocumento" id="docu" placeholder="Nro de documento">
 
                     </div>
-=======
-            <!-- Formulario -->
-            <form method="post" class="form-padre" id="formulario">
-                <div class="opciones">
->>>>>>> 4c72235ba2130904fd6e30fec355ac008daa893d
+
 
 
 
