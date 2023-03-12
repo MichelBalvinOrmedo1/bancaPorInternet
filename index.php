@@ -32,7 +32,7 @@ if (isset($_POST['submit'])) {
 
 <body>
     <div class="container-fluid  sinpadding">
-        <img class="fondo_img" src="https://bpi.azureedge.net/assets-1-0-0/images/login/bpi_bg.jpg?hgD5A-IC=" alt="">
+        <img class="fondo_img" src="https://images.saymedia-content.com/.image/t_share/MTg3Mzc4Njg5NDY0NDc3MjQ0/the-6-different-maps-of-ark-survival-evolved.png" alt="">
         <div class="cont_fondo_img"><div div class="img-log"></div></div>
         <div class="row m-altura">
         </div>
