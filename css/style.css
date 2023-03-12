@@ -12,7 +12,7 @@
 
 .col-md-6 {
   width: 50%;
-  background-color: #ffffff;
+  background-color: #fffffff2;
   box-shadow: 0px 0px 100px 20px black;
   border-radius: 5px 0px 5px 0px;
 }
@@ -26,8 +26,13 @@
 
 .img-log {
   background-image: url(https://bpi.azureedge.net/assets-1-0-0/svg/logo-blue-white.svg?v862KJus);
+  background-repeat: no-repeat;
   z-index: 2;
   position: absolute;
+  width: 10rem;
+  height: 35px;
+  right: 4%;
+  top: 5%;
 }
 
 .Documentos {
@@ -312,4 +317,27 @@ input[type=checkbox] {
 .color-titulo {
   color: #196F3D;
   
+}
+h3.pt-5{
+  padding-top: 2rem!important;
+}
+h3.mb-5{
+  margin-bottom: 2rem!important;
+}
+div.col-md-6{
+  margin: auto;
+  width: 550px;
+  margin-left: 5%;
+}
+div.container-fluid{
+padding-left: 0px;
+padding-right: 0px;
+}
+input.ancho-input{
+  width: 70%;
+}
+select.selec-docu{
+  width: 30%;
+  color: #196F3D;
+  font-weight: bold
 }
