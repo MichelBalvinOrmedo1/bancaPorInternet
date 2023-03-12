@@ -184,6 +184,10 @@
   .col-md-6.img-fondo {
     width: 100%;
   }
+  .col-md-6{
+    padding: 3rem;
+  }
+  
 
   .img-fondo {
     display: none;
@@ -265,14 +269,30 @@
   .container-fluid .row {
     flex-direction: column;
   }
-
+  div.col-md-6#col-md-6{
+    margin: auto;
+    margin-left: 0px;
+  }
   .col-md-6,
   .col-md-6.img-fondo {
     width: 100%;
+    box-shadow: none;
   }
 
   .img-fondo {
     display: none;
+  }
+  .img-log{
+    left: auto;
+    top: auto;
+    margin: auto;
+  }
+  .cont_fondo_img{
+    background-color: #20914f;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
   }
 
   .col-md-6.img-fondo {

@@ -33,7 +33,7 @@ if (isset($_POST['submit'])) {
 <body>
     <div class="container-fluid  sinpadding">
         <img class="fondo_img" src="https://bpi.azureedge.net/assets-1-0-0/images/login/bpi_bg.jpg?hgD5A-IC=" alt="">
-        <div div class="img-log"></div>
+        <div class="cont_fondo_img"><div div class="img-log"></div></div>
         <div class="row m-altura">
         </div>
         <div class="col-md-6">
