@@ -1,4 +1,4 @@
 deployment:
   tasks:
-    - export DEPLOYPATH=/home5/pruebasenatibalv/public_html
+    - export DEPLOYPATH=/home5/ibarrawork/public_html
     - /bin/cp -rp * $DEPLOYPATH
